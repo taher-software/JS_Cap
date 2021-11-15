@@ -1,3 +1,7 @@
 import './style.css';
 
-alert('Hello There');
+const sampleFunc = () => {
+  console.log('Hello There!');
+};
+
+sampleFunc();
