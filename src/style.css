@@ -29,6 +29,8 @@ header p {
   text-decoration-color: rgb(212, 189, 109);
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
+}
+
 html {
   font-family: monospace, sans-serif;
 }
