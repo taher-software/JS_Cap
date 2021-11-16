@@ -1,14 +1,18 @@
 html {
-  font-family: sans-serif;
+  font-family: monospace, sans-serif;
 }
 
 #footer {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: max-content;
-  background-color: white;
+  color: rgb(212, 189, 109);
+  border: 2px solid black;
 }
 
 #footer h3 {
@@ -16,6 +20,17 @@ html {
   text-align: left;
   padding: 1.5rem 2rem;
   margin: 0;
+}
+
+.hr {
+  width: 50%;
+  margin: 0 2rem;
+  background: rgb(212, 189, 109);
+  border: 1px solid rgb(212, 189, 109);
+}
+
+#footer h3:last-child {
+  padding-top: 1rem;
 }
 
 h3 a.github_link {
