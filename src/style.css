@@ -1,3 +1,32 @@
-body {
-  background-color: red;
+header {
+  display: flex;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+  align-items: center;
+}
+
+header img {
+  width: 12.5%;
+  border: 1px solid rgb(212, 189, 109);
+  border-radius: 50%;
+}
+
+header p {
+  margin-left: 10%;
+  font-family: monospace, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.8;
+  background: linear-gradient(rgb(212, 189, 109), rgb(220, 58, 55));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.chicken {
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-color: rgb(212, 189, 109);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
 }
