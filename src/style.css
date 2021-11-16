@@ -16,14 +16,14 @@ html {
 }
 
 #footer h3 {
-  text-align: left;
+  text-align: center;
   padding: 1.5rem 2rem;
   margin: 0;
 }
 
 .hr {
   width: 47rem;
-  margin: 0 2rem;
+  margin: 0 auto;
   background: rgb(212, 189, 109);
   border: 1px solid rgb(212, 189, 109);
 }
