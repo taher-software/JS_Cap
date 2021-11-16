@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard
+# Chicken Meals!
 
-> In this project, I will create a Leaderboard application with javascript and webpack.
+> In this project, I will create a Meals application with javascript and API.
 
 
 
-![Screenshot)](https://user-images.githubusercontent.com/63560332/141279278-9b8daf2a-e179-495f-a452-6ac78332a925.png)
+![Screenshot)]
 
 
 ## Built With
@@ -14,11 +14,12 @@
 - HTML
 - CSS
 - Javascript
+- API
 
 
 ## Live Demo
 
-[live demo-deployment-branch](https://pensive-heisenberg-2b7892.netlify.app/)
+[Coming soon]
 
 
 ## Getting Started
@@ -34,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 Clone this Repository
 You can do so on the website Girhub.com, go to the green button that says "Code", click on it, and clone it.
-You can also type git clone https://github.com/adamteddychang/Leaderboard.git into your terminal.
+You can also type git clone https://github.com/adamteddychang/JS_Cap.git into your terminal.
 
 
 
@@ -45,6 +46,9 @@ You can also type git clone https://github.com/adamteddychang/Leaderboard.git in
 - GitHub: [@adamteddychang](https://github.com/adamteddychang)
 - Twitter: [@AdamChang3](https://twitter.com/AdamChang3)
 
+👤 **Taher Haggui**
+
+- GitHub: [@Taher-web-dev](https://github.com/Taher-web-dev)
 
 
 
