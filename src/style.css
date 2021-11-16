@@ -1,3 +1,7 @@
+html {
+  font-family: monospace, sans-serif;
+}
+
 header {
   display: flex;
   width: 60%;
@@ -20,6 +24,7 @@ header p {
   line-height: 1.8;
   background: linear-gradient(rgb(212, 189, 109), rgb(220, 58, 55));
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -29,10 +34,6 @@ header p {
   text-decoration-color: rgb(212, 189, 109);
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
-}
-
-html {
-  font-family: monospace, sans-serif;
 }
 
 #footer {
@@ -46,23 +47,20 @@ html {
   color: rgb(212, 189, 109);
   border: 2px solid black;
   background-color: rgb(163, 49, 4);
+  font-size: 14px;
 }
 
 #footer h3 {
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   margin: 0;
 }
 
 .hr {
-  width: 47rem;
+  width: 43rem;
   margin: 0 auto;
   background: rgb(212, 189, 109);
   border: 1px solid rgb(212, 189, 109);
-}
-
-#footer h3:last-child {
-  padding-top: 1rem;
 }
 
 h3 a.github_link {
