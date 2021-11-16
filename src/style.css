@@ -5,25 +5,24 @@ html {
 #footer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: max-content;
   color: rgb(212, 189, 109);
   border: 2px solid black;
+  background-color: rgb(163, 49, 4);
 }
 
 #footer h3 {
-  background-color: white;
   text-align: left;
   padding: 1.5rem 2rem;
   margin: 0;
 }
 
 .hr {
-  width: 50%;
+  width: 47rem;
   margin: 0 2rem;
   background: rgb(212, 189, 109);
   border: 1px solid rgb(212, 189, 109);
