@@ -113,4 +113,40 @@ header p {
   width: 24%;
   background-color: rgba(193, 193, 193, 0.5);
   padding: 7px 0;
+html {
+  font-family: monospace, sans-serif;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: max-content;
+  color: rgb(212, 189, 109);
+  border: 2px solid black;
+  background-color: rgb(163, 49, 4);
+}
+
+#footer h3 {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin: 0;
+}
+
+.hr {
+  width: 47rem;
+  margin: 0 auto;
+  background: rgb(212, 189, 109);
+  border: 1px solid rgb(212, 189, 109);
+}
+
+#footer h3:last-child {
+  padding-top: 1rem;
+}
+
+h3 a.github_link {
+  color: inherit;
 }
