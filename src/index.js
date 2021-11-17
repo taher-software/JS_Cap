@@ -1,5 +1,9 @@
 import './style.css';
 import LOGO from './assets/Images/logo.jpg';
+// import LIKE from './assets/Images/like.png';
+// import COMMENT from './assets/Images/comment.png';
+// import { consumeMeals, counterHomeItems } from './api.js';
+import { loadModal } from './modal.js';
 import LIKE from './assets/Images/like.png';
 import COMMENT from './assets/Images/comment.png';
 import { consumeMeals, counterHomeItems } from './consume_meals.js';
@@ -48,11 +52,15 @@ const load = async () => {
       div.innerHTML = `<img src=${item.strMealThumb} alt = 'image item' class='image-item'>`
       + `<div class='item-data'><p>${item.strMeal}</p><img src=${LIKE} alt='like icon' class='like'></div>`
       + `<p class='likes-nbr'><span>${nbrLikes}</span> likes</p>`
-      + `<button class="btn"> <span>Comments</span> <div class='comment-icon'><img src=${COMMENT} ></div></button>`;
+      + `<button class="btn" id = "${itemsIndex[i]}"> <span>Comments</span> <div class='comment-icon'><img src=${COMMENT} ></div></button>`;
       div.className = 'card';
       div.style.gridColumn = `${(i % 3) + 1}/ span 1`;
       div.style.gridRow = `${Math.floor(i / 3) + 1}/ span 1`;
       cards.appendChild(div);
+      const btn = document.getElementById(`${itemsIndex[i]}`);
+      btn.addEventListener('click', () => {
+        loadModal(itemsArray, item.idMeal);
+      });
     }
     i += 1;
   }

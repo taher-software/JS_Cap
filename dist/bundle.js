@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html {\\r\\n  font-family: monospace, sans-serif;\\r\\n}\\r\\n\\r\\n#footer {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  position: fixed;\\r\\n  bottom: 0;\\r\\n  left: 0;\\r\\n  width: 100vw;\\r\\n  height: max-content;\\r\\n  color: rgb(212, 189, 109);\\r\\n  border: 2px solid black;\\r\\n  background-color: rgb(163, 49, 4);\\r\\n}\\r\\n\\r\\n#footer h3 {\\r\\n  text-align: center;\\r\\n  padding: 1.5rem 2rem;\\r\\n  margin: 0;\\r\\n}\\r\\n\\r\\n.hr {\\r\\n  width: 47rem;\\r\\n  margin: 0 auto;\\r\\n  background: rgb(212, 189, 109);\\r\\n  border: 1px solid rgb(212, 189, 109);\\r\\n}\\r\\n\\r\\n#footer h3:last-child {\\r\\n  padding-top: 1rem;\\r\\n}\\r\\n\\r\\nh3 a.github_link {\\r\\n  color: inherit;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-demo/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html {\\r\\n  font-family: monospace, sans-serif;\\r\\n}\\r\\n\\r\\n.isblur {\\r\\n  filter: blur(4px);\\r\\n}\\r\\n\\r\\n.noscroll {\\r\\n  position: fixed;\\r\\n}\\r\\n\\r\\nheader {\\r\\n  display: flex;\\r\\n  width: 60%;\\r\\n  margin-left: 20%;\\r\\n  margin-top: 5%;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\nheader img {\\r\\n  width: 12.5%;\\r\\n  border: 1px solid rgb(212, 189, 109);\\r\\n  border-radius: 50%;\\r\\n}\\r\\n\\r\\nheader p {\\r\\n  margin-left: 10%;\\r\\n  font-family: monospace, sans-serif;\\r\\n  font-size: 18px;\\r\\n  font-weight: 600;\\r\\n  line-height: 1.8;\\r\\n  background: linear-gradient(rgb(212, 189, 109), rgb(220, 58, 55));\\r\\n  -webkit-background-clip: text;\\r\\n  color: transparent;\\r\\n}\\r\\n\\r\\n.chicken {\\r\\n  text-decoration: underline;\\r\\n  font-weight: bold;\\r\\n  text-decoration-color: rgb(212, 189, 109);\\r\\n  text-decoration-thickness: 2px;\\r\\n  text-underline-offset: 2px;\\r\\n}\\r\\n\\r\\n.modal {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  align-items: center;\\r\\n  position: fixed;\\r\\n  overflow-y: scroll;\\r\\n  scroll-behavior: smooth;\\r\\n  top: 5%;\\r\\n  left: 15%;\\r\\n  bottom: 5%;\\r\\n  width: 60%;\\r\\n  border: none;\\r\\n  background-color: rgba(150, 45, 22, 0.952);\\r\\n  margin: 0 auto;\\r\\n  padding: 2rem 3rem 0;\\r\\n  z-index: 100;\\r\\n  font-weight: 600;\\r\\n}\\r\\n\\r\\n.meal_photo {\\r\\n  display: flex;\\r\\n  margin-left: 15rem;\\r\\n}\\r\\n\\r\\n.close_btn {\\r\\n  margin-left: 15rem;\\r\\n  font-size: 24px;\\r\\n  cursor: pointer;\\r\\n}\\r\\n\\r\\n.dish_title {\\r\\n  font-size: 32px;\\r\\n}\\r\\n\\r\\n.dish_info {\\r\\n  display: grid;\\r\\n  grid-template-columns: 1fr 1fr;\\r\\n  font-size: 24px;\\r\\n}\\r\\n\\r\\n#comment_title {\\r\\n  font-size: 32px;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n.comment {\\r\\n  font-size: 20px;\\r\\n}\\r\\n\\r\\n.hidden {\\r\\n  display: none;\\r\\n}\\r\\n\\r\\n#comment_form {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  width: 50%;\\r\\n  text-align: center;\\r\\n  margin-bottom: 2rem;\\r\\n}\\r\\n\\r\\n#comment_form h3 {\\r\\n  font-size: 24px;\\r\\n}\\r\\n\\r\\n.form_item {\\r\\n  margin: 2rem 8rem 0 2rem;\\r\\n}\\r\\n\\r\\n#submit_btn {\\r\\n  width: 20%;\\r\\n  background-color: tomato;\\r\\n  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.95);\\r\\n}\\r\\n\\r\\ninput:focus::placeholder,\\r\\ntextarea:focus::placeholder {\\r\\n  color: transparent;\\r\\n}\\r\\n\\r\\n.comment-icon {\\r\\n  height: 20px;\\r\\n  width: 24%;\\r\\n  background-color: rgba(193, 193, 193, 0.5);\\r\\n  padding: 7px 0;\\r\\n}\\r\\n\\r\\n#footer {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  position: fixed;\\r\\n  z-index: -1;\\r\\n  bottom: 0;\\r\\n  left: 0;\\r\\n  width: 100vw;\\r\\n  height: max-content;\\r\\n  color: rgb(212, 189, 109);\\r\\n  border: 2px solid black;\\r\\n  background-color: rgb(163, 49, 4);\\r\\n  font-size: 14px;\\r\\n}\\r\\n\\r\\n#footer h3 {\\r\\n  text-align: center;\\r\\n  padding: 1rem;\\r\\n  margin: 0;\\r\\n}\\r\\n\\r\\n.hr {\\r\\n  width: 43rem;\\r\\n  margin: 0 auto;\\r\\n  background: rgb(212, 189, 109);\\r\\n  border: 1px solid rgb(212, 189, 109);\\r\\n}\\r\\n\\r\\nh3 a.github_link {\\r\\n  color: inherit;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-demo/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -110,13 +110,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/api.js":
+/*!********************!*\
+  !*** ./src/api.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"url\": () => (/* binding */ url),\n/* harmony export */   \"consumeMeals\": () => (/* binding */ consumeMeals),\n/* harmony export */   \"counterHomeItems\": () => (/* binding */ counterHomeItems)\n/* harmony export */ });\nconst url = 'https://www.themealdb.com/api/json/v1/1/search.php?s=chicken';\nconst consumeMeals = async () => {\n  const resp = await fetch(url);\n  return resp.json();\n};\n\nconst counterHomeItems = (container, nbrItems) => {\n  const elemnts = container.children;\n  if (elemnts.length === nbrItems) return true;\n  return false;\n};\n\n\n//# sourceURL=webpack://webpack-demo/./src/api.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst sampleFunc = () => {\n  console.log('Hello There!');\n};\n\nsampleFunc();\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _assets_Images_logo_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/Images/logo.jpg */ \"./src/assets/Images/logo.jpg\");\n/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api.js */ \"./src/api.js\");\n/* harmony import */ var _modal_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modal.js */ \"./src/modal.js\");\n\n\n// import LIKE from './assets/Images/like.png';\n// import COMMENT from './assets/Images/comment.png';\n\n\n// declarate variables //\nconst header = document.querySelector('header');\nconst cards = document.querySelector('.items');\n// build the home page header //\nheader.innerHTML = `<img src=${_assets_Images_logo_jpg__WEBPACK_IMPORTED_MODULE_1__} alt='logo'>`\n  + '<p class=\"chicken\"> Chicken meals(6)</p>'\n  + '<p> Sea food meals</p>'\n  + '<p> Meat meals </p>';\nheader.className = 'header';\n// //\nconst load = async () => {\n  const res = await ((0,_api_js__WEBPACK_IMPORTED_MODULE_2__.consumeMeals)());\n  const itemsArray = res.meals;\n  let i = 0;\n  const itemsIndex = {};\n  while (!(0,_api_js__WEBPACK_IMPORTED_MODULE_2__.counterHomeItems)(cards, 6)) {\n    const item = itemsArray[i];\n    if ((!!item.strMeal) && (item.strMeal !== '') && (!!item.strMealThumb)) {\n      itemsIndex[i] = item.idMeal;\n      const div = document.createElement('div');\n      div.innerHTML = `<img src=${item.strMealThumb} alt = 'image item' class='image-item'>`\n      + `<div class='item-data'><p>${item.strMeal}</p><img src=like alt='like icon' class='like'></div>`\n      + '<p class=\\'likes-nbr\\'><span>0</span> likes</p>'\n      + `<button class=\"btn\" id = \"${itemsIndex[i]}\"> <span>Comments</span> <div class='comment-icon'><img src=comment ></div></button>`;\n      div.className = 'card';\n      div.style.gridColumn = `${(i % 3) + 1}/ span 1`;\n      div.style.gridRow = `${Math.floor(i / 3) + 1}/ span 1`;\n      cards.appendChild(div);\n    }\n    i += 1;\n  }\n  const btns = document.querySelectorAll('.btn');\n\n  for (let j = 0; j < btns.length; j += 1) {\n    btns[j].addEventListener('click', () => {\n      (0,_modal_js__WEBPACK_IMPORTED_MODULE_3__.loadModal)(itemsArray, j);\n    });\n  }\n};\nload();\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modal.js":
+/*!**********************!*\
+  !*** ./src/modal.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadModal),\n/* harmony export */   \"loadModal\": () => (/* binding */ loadModal)\n/* harmony export */ });\nconst modal = document.querySelector('.modal');\nconst main = document.querySelector('#main');\n\nfunction loadModal(meals, i) {\n  main.classList.add('isblur');\n  modal.classList.remove('hidden');\n  main.classList.add('noscroll');\n  modal.id = meals[i].idMeal;\n  const photoDiv = document.createElement('div');\n  photoDiv.classList.add('meal_photo');\n  modal.appendChild(photoDiv);\n  const image = document.createElement('img');\n  image.src = meals[i].strMealThumb;\n  // image.alt = 'Roast Chicken';\n  image.height = '300';\n  photoDiv.appendChild(image);\n  const closeBtn = document.createElement('i');\n  closeBtn.classList.add('fas');\n  closeBtn.classList.add('fa-times');\n  closeBtn.classList.add('close_btn');\n  photoDiv.appendChild(closeBtn);\n  const dishTitle = document.createElement('h3');\n  dishTitle.classList.add('dish_title');\n  dishTitle.innerHTML = meals[i].strMeal;\n  modal.appendChild(dishTitle);\n  const dishInfo = document.createElement('div');\n  dishInfo.classList.add('dish_info');\n  modal.appendChild(dishInfo);\n  const category = document.createElement('p');\n  const mainI = document.createElement('p');\n  const area = document.createElement('p');\n  const video = document.createElement('p');\n  category.innerHTML = `Category: ${meals[i].strCategory}`;\n  mainI.innerHTML = `Main ingredient: ${meals[i].strIngredient1}`;\n  area.innerHTML = `Area: ${meals[i].strArea}`;\n  video.innerHTML = `Youtube: <a href=\"${meals[i].strYoutube}\">Tutorial</a>`;\n  dishInfo.appendChild(category);\n  dishInfo.appendChild(mainI);\n  dishInfo.appendChild(area);\n  dishInfo.appendChild(video);\n  const comments = document.createElement('div');\n  comments.classList.add('comments');\n  modal.appendChild(comments);\n  const commentTitle = document.createElement('h3');\n  commentTitle.id = 'comment_title';\n  comments.appendChild(commentTitle);\n  commentTitle.innerHTML = 'Comments';\n  const commentDiv = document.createElement('div');\n  comments.appendChild(commentDiv);\n  commentDiv.innerHTML += '<p class=\"comment\">Comment: Comment 1</p>';\n  const form = document.createElement('form');\n  form.id = 'comment_form';\n  modal.appendChild(form);\n  const formTitle = document.createElement('h3');\n  formTitle.innerHTML = 'Add a comment';\n  form.appendChild(formTitle);\n  const nameInp = document.createElement('input');\n  nameInp.type = 'text';\n  nameInp.placeholder = 'Your name';\n  nameInp.className = 'form_item';\n  nameInp.required = true;\n  form.appendChild(nameInp);\n  const commentText = document.createElement('textarea');\n  commentText.name = 'insights';\n  commentText.id = 'insight';\n  commentText.cols = '30';\n  commentText.rows = '10';\n  commentText.className = 'form_item';\n  commentText.placeholder = 'Your Comment';\n  commentText.required = true;\n  form.appendChild(commentText);\n  const submitCom = document.createElement('button');\n  submitCom.type = 'submit';\n  submitCom.className = 'form_item';\n  submitCom.id = 'submit_btn';\n  submitCom.innerHTML = 'Comment';\n  form.appendChild(submitCom);\n  const closeModal = () => {\n    while (modal.firstChild) {\n      modal.removeChild(modal.firstChild);\n    }\n    modal.classList.add('hidden');\n    main.classList.remove('isblur');\n    main.classList.remove('noscroll');\n  };\n  closeBtn.addEventListener('click', closeModal);\n}\n\n\n\n//# sourceURL=webpack://webpack-demo/./src/modal.js?");
+
+/***/ }),
+
+/***/ "./src/assets/Images/logo.jpg":
+/*!************************************!*\
+  !*** ./src/assets/Images/logo.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"fd47e30e804add639dcd.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/assets/Images/logo.jpg?");
 
 /***/ })
 
@@ -171,6 +201,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +227,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
