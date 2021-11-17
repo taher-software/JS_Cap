@@ -1,16 +1,19 @@
 const modal = document.querySelector('.modal');
 const main = document.querySelector('#main');
 
-export default function loadModal(meals, i) {
+export default function loadModal(meals, num) {
+  const mealArr = meals.filter((o) => o.idMeal === num);
+  const mealObj = mealArr[0];
+
   main.classList.add('isblur');
   modal.classList.remove('hidden');
   main.classList.add('noscroll');
-  modal.id = meals[i].idMeal;
+  modal.id = num;
   const photoDiv = document.createElement('div');
   photoDiv.classList.add('meal_photo');
   modal.appendChild(photoDiv);
   const image = document.createElement('img');
-  image.src = meals[i].strMealThumb;
+  image.src = mealObj.strMealThumb;
   // image.alt = 'Roast Chicken';
   image.height = '300';
   photoDiv.appendChild(image);
@@ -21,7 +24,7 @@ export default function loadModal(meals, i) {
   photoDiv.appendChild(closeBtn);
   const dishTitle = document.createElement('h3');
   dishTitle.classList.add('dish_title');
-  dishTitle.innerHTML = meals[i].strMeal;
+  dishTitle.innerHTML = mealObj.strMeal;
   modal.appendChild(dishTitle);
   const dishInfo = document.createElement('div');
   dishInfo.classList.add('dish_info');
@@ -30,10 +33,10 @@ export default function loadModal(meals, i) {
   const mainI = document.createElement('p');
   const area = document.createElement('p');
   const video = document.createElement('p');
-  category.innerHTML = `Category: ${meals[i].strCategory}`;
-  mainI.innerHTML = `Main ingredient: ${meals[i].strIngredient1}`;
-  area.innerHTML = `Area: ${meals[i].strArea}`;
-  video.innerHTML = `Youtube: <a href="${meals[i].strYoutube}" target = "blank" id = "youtube_link">Tutorial</a>`;
+  category.innerHTML = `Category: ${mealObj.strCategory}`;
+  mainI.innerHTML = `Main ingredient: ${mealObj.strIngredient1}`;
+  area.innerHTML = `Area: ${mealObj.strArea}`;
+  video.innerHTML = `Youtube: <a href="${mealObj.strYoutube}" target = "blank" id = "youtube_link">Tutorial</a>`;
   dishInfo.appendChild(category);
   dishInfo.appendChild(mainI);
   dishInfo.appendChild(area);
@@ -57,7 +60,7 @@ export default function loadModal(meals, i) {
   form.appendChild(formTitle);
   const nameInp = document.createElement('input');
   nameInp.type = 'text';
-  nameInp.id = 'yourname'
+  nameInp.id = 'yourname';
   nameInp.placeholder = 'Your name';
   nameInp.className = 'form_item';
   nameInp.required = true;

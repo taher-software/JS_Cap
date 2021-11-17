@@ -32,15 +32,12 @@ const load = async () => {
       div.style.gridColumn = `${(i % 3) + 1}/ span 1`;
       div.style.gridRow = `${Math.floor(i / 3) + 1}/ span 1`;
       cards.appendChild(div);
+      const btn = document.getElementById(`${itemsIndex[i]}`);
+      btn.addEventListener('click', () => {
+        loadModal(itemsArray, item.idMeal);
+      });
     }
     i += 1;
-  }
-  const btns = document.querySelectorAll('.btn');
-
-  for (let j = 0; j < btns.length; j += 1) {
-    btns[j].addEventListener('click', () => {
-      loadModal(itemsArray, j);
-    });
   }
 };
 load();
