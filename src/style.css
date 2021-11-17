@@ -220,6 +220,7 @@ textarea:focus::placeholder {
   background-color: white;
   border: none;
   width: 100%;
+  cursor: pointer;
 }
 
 .btn span {
