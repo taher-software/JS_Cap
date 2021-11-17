@@ -1,5 +1,11 @@
 html {
   font-family: monospace, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
 }
 
 .isblur {
@@ -158,6 +164,83 @@ textarea:focus::placeholder {
   color: transparent;
 }
 
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 5% 22.5% 10% 22.5%;
+
+  /* margin-left: 22.5%;
+  margin-top: 5%; */
+  width: 55%;
+  grid-column-gap: 20%;
+  grid-row-gap: 10%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-item {
+  width: 100%;
+}
+
+.item-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-data p {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgb(128, 128, 128), rgb(255, 255, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.like {
+  width: 15%;
+  height: 60%;
+}
+
+.likes-nbr {
+  align-self: flex-end;
+  color: rgb(236, 69, 89);
+}
+
+.btn {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  width: 100%;
+}
+
+.btn span {
+  background-color: rgb(236, 69, 89);
+  height: 20px;
+  width: 75%;
+  border-radius: 5% 0 0 5%;
+  align-items: center;
+  padding: 7px 0;
+  color: rgb(212, 189, 109);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.comment-icon img {
+  height: 80%;
+  margin-top: 10%;
+}
+
 .comment-icon {
   height: 20px;
   width: 24%;
@@ -165,14 +248,18 @@ textarea:focus::placeholder {
   padding: 7px 0;
 }
 
+#main {
+  width: 100vw;
+  height: 100%;
+}
+
 #footer {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  z-index: -1;
+  z-index: 0;
   bottom: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: max-content;
   color: rgb(212, 189, 109);
   border: 2px solid black;
