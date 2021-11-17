@@ -113,6 +113,8 @@ header p {
   width: 24%;
   background-color: rgba(193, 193, 193, 0.5);
   padding: 7px 0;
+}
+
 html {
   font-family: monospace, sans-serif;
 }
