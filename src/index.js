@@ -3,7 +3,7 @@ import LOGO from './assets/Images/logo.jpg';
 import LIKE from './assets/Images/like.png';
 import COMMENT from './assets/Images/comment.png';
 import { consumeMeals, counterHomeItems } from './consume_meals.js';
-import { getLikes, postLikes } from './manage-likes.js';
+import { getLikes, postLikes, addNewLike } from './manage-likes.js';
 // declarate variables //
 const header = document.querySelector('header');
 const cards = document.querySelector('.items');
@@ -19,10 +19,10 @@ const load = async () => {
   const itemsArray = res.meals;
   let i = 0;
   const itemsIndex = {};
-  const resp = await getLikes();
+  const resp = await getLikes().then((resp) => resp.json());
   let likes = [];
-  if ((!resp.status) || (resp.status !== 200)) {
-    likes = resp.json();
+  if (resp.length > 0) {
+    likes = resp;
   }
   while (!counterHomeItems(cards, 6)) {
     const item = itemsArray[i];
@@ -56,5 +56,13 @@ const load = async () => {
     }
     i += 1;
   }
+  const likesIcones = Array.from(document.querySelectorAll('.like'));
+  likesIcones.forEach((likeImage) => {
+    const ind = likesIcones.findIndex((el) => el === likeImage);
+    const id = itemsIndex[ind];
+    likeImage.addEventListener('click', (e) => {
+      addNewLike(e, id);
+    });
+  });
 };
 load();
