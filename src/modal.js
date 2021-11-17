@@ -1,43 +1,16 @@
-const meals = [
-  {
-    idMeal: '52795',
-    strMeal: 'Chicken Handi',
-    strCategory: 'Chicken',
-    strArea: 'Indian',
-    strMealThumb: 'https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg',
-    strYoutube: 'https://www.youtube.com/watch?v=IO0issT0Rmc',
-    strIngredient1: 'Chicken',
-  },
-  {
-    idMeal: '52956',
-    strMeal: 'Chicken Congee',
-    strCategory: 'Chicken',
-    strArea: 'Chinese',
-    strMealThumb: 'https://www.themealdb.com/images/media/meals/1529446352.jpg',
-    strYoutube: 'https://www.youtube.com/watch?v=kqEfk801E94',
-    strIngredient1: 'Chicken',
-  },
-  {
-    idMeal: '52831',
-    strMeal: 'Chicken Karaage',
-    strCategory: 'Chicken',
-    strArea: 'Japanese',
-    strMealThumb: 'https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg',
-    strYoutube: 'https://www.youtube.com/watch?v=XivddFddthc',
-    strIngredient1: 'Chicken thigh',
-  },
-];
-
 const modal = document.querySelector('.modal');
+const main = document.querySelector('#main');
 
-
-const loadModal = (i) => {
-
+export default function loadModal(meals, i) {
+  main.classList.add('isblur');
+  modal.classList.remove('hidden');
+  main.classList.add('noscroll');
+  modal.id = meals[i].idMeal;
   const photoDiv = document.createElement('div');
   photoDiv.classList.add('meal_photo');
   modal.appendChild(photoDiv);
   const image = document.createElement('img');
-  image.src = meals[0].strMealThumb;
+  image.src = meals[i].strMealThumb;
   // image.alt = 'Roast Chicken';
   image.height = '300';
   photoDiv.appendChild(image);
@@ -48,7 +21,7 @@ const loadModal = (i) => {
   photoDiv.appendChild(closeBtn);
   const dishTitle = document.createElement('h3');
   dishTitle.classList.add('dish_title');
-  dishTitle.innerHTML = meals[0].strMeal;
+  dishTitle.innerHTML = meals[i].strMeal;
   modal.appendChild(dishTitle);
   const dishInfo = document.createElement('div');
   dishInfo.classList.add('dish_info');
@@ -57,10 +30,10 @@ const loadModal = (i) => {
   const mainI = document.createElement('p');
   const area = document.createElement('p');
   const video = document.createElement('p');
-  category.innerHTML = 'Category: ' + meals[0].strCategory;
-  mainI.innerHTML = 'Main ingredient: '+ meals[0].strIngredient1;
-  area.innerHTML = 'Area: '+ meals[0].strArea;
-  video.innerHTML = 'Youtube:'+ `<a href="${meals[0].strYoutube}">Tutorial</a>`;
+  category.innerHTML = `Category: ${meals[i].strCategory}`;
+  mainI.innerHTML = `Main ingredient: ${meals[i].strIngredient1}`;
+  area.innerHTML = `Area: ${meals[i].strArea}`;
+  video.innerHTML = `Youtube: <a href="${meals[i].strYoutube}">Tutorial</a>`;
   dishInfo.appendChild(category);
   dishInfo.appendChild(mainI);
   dishInfo.appendChild(area);
@@ -103,16 +76,14 @@ const loadModal = (i) => {
   submitCom.innerHTML = 'Comment';
   form.appendChild(submitCom);
   const closeModal = () => {
-    if(!modal.classList.contains('hidden')){
-      modal.classList.add('hidden')
-    }  
-  }
+    while (modal.firstChild) {
+      modal.removeChild(modal.firstChild);
+    }
+    modal.classList.add('hidden');
+    main.classList.remove('isblur');
+    main.classList.remove('noscroll');
+  };
   closeBtn.addEventListener('click', closeModal);
-};
+}
 
-
-meals.forEach((meal) => {
-  
-});
-
-export {loadModal, meals}
+export { loadModal };

@@ -2,6 +2,14 @@ html {
   font-family: monospace, sans-serif;
 }
 
+.isblur {
+  filter: blur(4px);
+}
+
+.noscroll {
+  position: fixed;
+}
+
 header {
   display: flex;
   width: 60%;
@@ -39,15 +47,19 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
+  position: fixed;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  top: 5%;
   left: 15%;
+  bottom: 5%;
   width: 60%;
-  border: 2px solid black;
-  background-color: white;
+  border: none;
+  background-color: rgba(150, 45, 22, 0.952);
   margin: 0 auto;
   padding: 2rem 3rem 0;
+  z-index: 100;
+  font-weight: 600;
 }
 
 .meal_photo {
@@ -71,6 +83,15 @@ header p {
   font-size: 24px;
 }
 
+#comment_title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.comment {
+  font-size: 20px;
+}
+
 .hidden {
   display: none;
 }
@@ -83,17 +104,30 @@ header p {
   margin-bottom: 2rem;
 }
 
+#comment_form h3 {
+  font-size: 24px;
+}
+
 .form_item {
-  margin: 2rem 10rem 0 0;
+  margin: 2rem 8rem 0 2rem;
 }
 
 #submit_btn {
   width: 20%;
+  background-color: tomato;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.95);
 }
 
 input:focus::placeholder,
 textarea:focus::placeholder {
   color: transparent;
+}
+
+.comment-icon {
+  height: 20px;
+  width: 24%;
+  background-color: rgba(193, 193, 193, 0.5);
+  padding: 7px 0;
 }
 
 #footer {

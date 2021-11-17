@@ -3,4 +3,10 @@ const consumeMeals = async () => {
   const resp = await fetch(url);
   return resp.json();
 };
-consumeMeals();
+
+const counterHomeItems = (container, nbrItems) => {
+  const elemnts = container.children;
+  if (elemnts.length === nbrItems) return true;
+  return false;
+};
+export { url, consumeMeals, counterHomeItems };
