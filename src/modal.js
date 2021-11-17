@@ -33,7 +33,7 @@ export default function loadModal(meals, i) {
   category.innerHTML = `Category: ${meals[i].strCategory}`;
   mainI.innerHTML = `Main ingredient: ${meals[i].strIngredient1}`;
   area.innerHTML = `Area: ${meals[i].strArea}`;
-  video.innerHTML = `Youtube: <a href="${meals[i].strYoutube}">Tutorial</a>`;
+  video.innerHTML = `Youtube: <a href="${meals[i].strYoutube}" target = "blank" id = "youtube_link">Tutorial</a>`;
   dishInfo.appendChild(category);
   dishInfo.appendChild(mainI);
   dishInfo.appendChild(area);
@@ -45,9 +45,10 @@ export default function loadModal(meals, i) {
   commentTitle.id = 'comment_title';
   comments.appendChild(commentTitle);
   commentTitle.innerHTML = 'Comments';
-  const commentDiv = document.createElement('div');
+  const commentDiv = document.createElement('ul');
   comments.appendChild(commentDiv);
-  commentDiv.innerHTML += '<p class="comment">Comment: Comment 1</p>';
+  commentDiv.innerHTML += '<li class="comment">Comment: Comment 1</li>';
+  commentDiv.innerHTML += '<li class="comment">Comment: Comment 2 </li>';
   const form = document.createElement('form');
   form.id = 'comment_form';
   modal.appendChild(form);
@@ -56,6 +57,7 @@ export default function loadModal(meals, i) {
   form.appendChild(formTitle);
   const nameInp = document.createElement('input');
   nameInp.type = 'text';
+  nameInp.id = 'yourname'
   nameInp.placeholder = 'Your name';
   nameInp.className = 'form_item';
   nameInp.required = true;

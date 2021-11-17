@@ -83,13 +83,38 @@ header p {
   font-size: 24px;
 }
 
+#youtube_link {
+  text-decoration: none;
+  color: rgb(75, 0, 0);
+  background-color: rgb(236, 122, 84);
+  border-radius: 10px;
+  padding: 5px;
+}
+
 #comment_title {
   font-size: 32px;
   text-align: center;
+  margin-bottom: 0;
+}
+
+.comments ul {
+  padding: 0;
 }
 
 .comment {
   font-size: 20px;
+  list-style: none;
+  padding: 1rem 10px;
+  text-align: center;
+}
+
+.comment:first-child {
+  padding-top: 0;
+}
+
+.comment:nth-child(even) {
+  background-color: tomato;
+  border-radius: 2rem;
 }
 
 .hidden {
@@ -106,16 +131,26 @@ header p {
 
 #comment_form h3 {
   font-size: 24px;
+  margin-bottom: 0;
 }
 
 .form_item {
-  margin: 2rem 8rem 0 2rem;
+  margin: 20px auto;
+  border: hidden;
+  border-radius: 30px;
+  padding: 25px;
+  resize: none;
+}
+
+#yourname {
+  padding: 10px;
 }
 
 #submit_btn {
   width: 20%;
   background-color: tomato;
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.95);
+  padding: 10px;
 }
 
 input:focus::placeholder,
