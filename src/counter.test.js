@@ -6,4 +6,6 @@ test('test Number of elements returned by counterItem', ()=>{
   + '<li>'
   + '<li>'
   + '</ul>';
+  const container = document.querySelector('ul');
+  expect(counterItem(container)).toBe(4);
 })
