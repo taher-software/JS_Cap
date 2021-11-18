@@ -16,7 +16,6 @@ export default function loadModal(meals, num) {
   modal.appendChild(photoDiv);
   const image = document.createElement('img');
   image.src = mealObj.strMealThumb;
-  // image.alt = 'Roast Chicken';
   image.height = '300';
   photoDiv.appendChild(image);
   const closeBtn = document.createElement('i');

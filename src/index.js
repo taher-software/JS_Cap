@@ -16,7 +16,6 @@ header.innerHTML = `<img src=${LOGO} alt='logo'>`
   + '<p> Sea food meals</p>'
   + '<p> Meat meals </p>';
 header.className = 'header';
-// //
 const load = async () => {
   const res = await (consumeMeals());
   const itemsArray = res.meals;

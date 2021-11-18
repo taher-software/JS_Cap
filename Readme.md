@@ -21,7 +21,7 @@
 ## Live Demo
 
 
-[site](https://taher-web-dev.github.io/JS_Cap/)
+[Live Site](https://heuristic-carson-d71dab.netlify.app/)
 
 ## Getting Started
 
