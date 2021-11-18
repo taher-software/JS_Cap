@@ -102,14 +102,16 @@ header p {
   text-align: center;
   margin-bottom: 0;
 }
+
 #togBtn {
- font-size: 20px;
- border-radius: 25px;
- border:none;
- background-color: darksalmon;
- cursor: pointer;
- padding: 5px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: darksalmon;
+  cursor: pointer;
+  padding: 5px;
 }
+
 .comments ul {
   padding: 0;
 }
