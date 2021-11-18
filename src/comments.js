@@ -9,7 +9,7 @@ const getComm = async () => {
   const mealCom = await get();
   comCount.innerHTML = `${mealCom.length > 0 ? `(${mealCom.length})` : '0'}`;
   comUl.innerHTML = '';
-  let dis = false;
+  let dis = true;
   mealCom.reverse();
   const displayAllComms = () => {
     if (mealCom.length > 0) {
@@ -35,16 +35,18 @@ const getComm = async () => {
     });
   };
 
-  displayAllComms();
+  display6Comms();
 
   toggle.addEventListener('click', () => {
     if (dis === true) {
       comUl.innerHTML = '';
       displayAllComms();
+      toggle.innerHTML = 'Show 6';
       dis = false;
     } else if (dis === false) {
       comUl.innerHTML = '';
       display6Comms();
+      toggle.innerHTML = 'Show All';
       dis = true;
     }
   });

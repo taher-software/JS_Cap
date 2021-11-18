@@ -49,7 +49,7 @@ export default function loadModal(meals, num) {
   const commentTitle = document.createElement('h3');
   commentTitle.id = 'comment_title';
   comments.appendChild(commentTitle);
-  commentTitle.innerHTML = 'Comments <span id = "com_count"></span> <button id="togBtn">Show ALL/6</button>';
+  commentTitle.innerHTML = 'Comments <span id = "com_count"></span> <button id="togBtn">Show ALL</button>';
   const commentDiv = document.createElement('ul');
   commentDiv.id = 'comment_div';
   comments.appendChild(commentDiv);
