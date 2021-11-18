@@ -1,4 +1,5 @@
-import counterItem from './counter_items.js'
+import counterItem from './counter_items.js';
+
 const getComm = async () => {
   const subBtn = document.querySelector('#submit_btn');
   const comUl = document.querySelector('#comment_div');
@@ -9,7 +10,7 @@ const getComm = async () => {
     .then((res) => res.json());
   const mealCom = await get();
 
-  let allCom = `${mealCom.length > 0 ? `${mealCom.length}` : '0'}`;
+  const allCom = `${mealCom.length > 0 ? `${mealCom.length}` : '0'}`;
   comUl.innerHTML = '';
   let dis = true;
   mealCom.reverse();
@@ -23,7 +24,7 @@ const getComm = async () => {
       `;
         comUl.appendChild(comLi);
       });
-      comCount.innerHTML = `(${counterItem(comUl)})`
+      comCount.innerHTML = `(${counterItem(comUl)})`;
     }
   };
   const display6Comms = () => {
@@ -36,7 +37,7 @@ const getComm = async () => {
       `;
       comUl.appendChild(comLi);
     });
-    comCount.innerHTML = `(${counterItem(comUl)}/${allCom})`
+    comCount.innerHTML = `(${counterItem(comUl)}/${allCom})`;
   };
 
   display6Comms();
