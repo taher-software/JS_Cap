@@ -6,7 +6,7 @@
 
 
 
-![Screenshot)]
+<img src='https://github.com/Taher-web-dev/JS_Cap/blob/Dev/src/assets/Images/screenshoot.png' alt='screenshot'/>
 
 
 ## Built With
@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Coming soon]
+
 
 
 ## Getting Started
