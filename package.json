@@ -7,12 +7,12 @@
     "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
-    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.4.0",
     "eslint": "^7.32.0",
@@ -30,7 +30,6 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
   },
-  
   "dependencies": {
     "lodash": "^4.17.21"
   },
