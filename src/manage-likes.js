@@ -21,4 +21,13 @@ const postLikes = async (id = '', nbrLikes = 0) => {
   }).then((res) => res);
   return resp;
 };
-export { url, getLikes, postLikes };
+const addNewLike = async (e, id = '') => {
+  const container = e.target.parentNode.parentNode;
+  const currentNbrLikes = parseInt(container.querySelector('.likes-nbr span').textContent, 10);
+  const newNbrLikes = currentNbrLikes + 1;
+  container.querySelector('.likes-nbr span').textContent = newNbrLikes;
+  await (postLikes(id, newNbrLikes));
+};
+export {
+  url, getLikes, postLikes, addNewLike,
+};
