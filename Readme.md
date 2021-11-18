@@ -39,13 +39,13 @@ To get a local copy up and running follow these simple example steps.
 - Clone this project by the command: 
 
 ```
-$ git clone git@github.com:Taher-web-dev/Leaderboard.git
+$ git clone git@github.com:Taher-web-dev/JS_Cap.git
 ```
 
 - Then go to the main folder using the next command:
 
 ```
-$ cd Leaderboard/
+$ cd JS_Cap/
 ```
 
 - Finally, install npm , then run <b> npm start </b> in your console.
