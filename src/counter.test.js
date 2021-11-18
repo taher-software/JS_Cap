@@ -1,4 +1,7 @@
-import {default as counterItem} from './counter.test.js';
+/**
+ * @jest-environment jsdom
+ */
+import {default as counterItem} from './counter_items.js';
 test('test Number of elements returned by counterItem', ()=>{
   document.body.innerHTML = '<ul>'
   + '<li>'
