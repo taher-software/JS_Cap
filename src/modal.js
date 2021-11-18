@@ -53,8 +53,6 @@ export default function loadModal(meals, num) {
   const commentDiv = document.createElement('ul');
   commentDiv.id = 'comment_div';
   comments.appendChild(commentDiv);
-  commentDiv.innerHTML += '<li class="comment">Comment: Comment 1</li>';
-  commentDiv.innerHTML += '<li class="comment">Comment: Comment 2 </li>';
   const form = document.createElement('form');
   form.id = 'comment_form';
   modal.appendChild(form);
