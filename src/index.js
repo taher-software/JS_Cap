@@ -1,8 +1,5 @@
 import './style.css';
 import LOGO from './assets/Images/logo.jpg';
-// import LIKE from './assets/Images/like.png';
-// import COMMENT from './assets/Images/comment.png';
-// import { consumeMeals, counterHomeItems } from './api.js';
 import { loadModal } from './modal.js';
 import LIKE from './assets/Images/like.png';
 import COMMENT from './assets/Images/comment.png';

@@ -1,0 +1,1 @@
+const homeCounterItems = (container) => Array.from(container.children).length;
