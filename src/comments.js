@@ -62,4 +62,3 @@ const postComm = () => {
 };
 
 export default postComm;
-
