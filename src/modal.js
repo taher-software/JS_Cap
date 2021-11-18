@@ -1,3 +1,5 @@
+import postComm from './comments.js';
+
 const modal = document.querySelector('.modal');
 const main = document.querySelector('#main');
 
@@ -47,8 +49,9 @@ export default function loadModal(meals, num) {
   const commentTitle = document.createElement('h3');
   commentTitle.id = 'comment_title';
   comments.appendChild(commentTitle);
-  commentTitle.innerHTML = 'Comments';
+  commentTitle.innerHTML = 'Comments <span id = "com_count">(0)</span>';
   const commentDiv = document.createElement('ul');
+  commentDiv.id = 'comment_div';
   comments.appendChild(commentDiv);
   commentDiv.innerHTML += '<li class="comment">Comment: Comment 1</li>';
   commentDiv.innerHTML += '<li class="comment">Comment: Comment 2 </li>';
@@ -78,8 +81,10 @@ export default function loadModal(meals, num) {
   submitCom.type = 'submit';
   submitCom.className = 'form_item';
   submitCom.id = 'submit_btn';
+  submitCom.setAttribute('data', num);
   submitCom.innerHTML = 'Comment';
   form.appendChild(submitCom);
+  postComm();
   const closeModal = () => {
     while (modal.firstChild) {
       modal.removeChild(modal.firstChild);

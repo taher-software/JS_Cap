@@ -1,13 +1,11 @@
 import './style.css';
 import LOGO from './assets/Images/logo.jpg';
-// import LIKE from './assets/Images/like.png';
-// import COMMENT from './assets/Images/comment.png';
-// import { consumeMeals, counterHomeItems } from './api.js';
 import { loadModal } from './modal.js';
 import LIKE from './assets/Images/like.png';
 import COMMENT from './assets/Images/comment.png';
 import { consumeMeals, counterHomeItems } from './consume_meals.js';
 import { getLikes, postLikes } from './manage-likes.js';
+
 // declarate variables //
 const header = document.querySelector('header');
 const cards = document.querySelector('.items');
