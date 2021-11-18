@@ -2,7 +2,7 @@
 
 # Chicken Meals!
 
-> In this project, I will create a Meals application with javascript and API.
+> In this project, we  will create a Meals application with javascript and API.
 
 
 
@@ -13,6 +13,7 @@
 
 - HTML
 - CSS
+- git
 - Javascript
 - API
 
@@ -33,11 +34,32 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-Clone this Repository
-You can do so on the website Girhub.com, go to the green button that says "Code", click on it, and clone it.
-You can also type git clone https://github.com/adamteddychang/JS_Cap.git into your terminal.
+To get a local copy up and running follow these simple example steps.
+- Open terminal
+- Clone this project by the command: 
+
+```
+$ git clone git@github.com:Taher-web-dev/Leaderboard.git
+```
+
+- Then go to the main folder using the next command:
+
+```
+$ cd Leaderboard/
+```
+
+- Finally, install npm , then run <b> npm start </b> in your console.
+
+### Prerequisites
+
+- IDE to edit and run the code (We use Visual Studio Code 🔥).
+- Git to versionning your work.
 
 
+### Usage
+
+- Web developement practioner
+- For anyone who wants to create a meals application.
 
 
 
@@ -70,4 +92,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [Microverse](https://www.microverse.org/) licensed.
