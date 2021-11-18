@@ -4,8 +4,7 @@ import { loadModal } from './modal.js';
 import LIKE from './assets/Images/like.png';
 import COMMENT from './assets/Images/comment.png';
 import { consumeMeals, counterHomeItems } from './consume_meals.js';
-import { getLikes, postLikes, addNewLike } from './manage-likes.js';
-import { default as homeCounterItems } from './counter_items.js';  
+import { getLikes, postLikes, addNewLike } from './manage-likes.js';  
 // declarate variables //
 const header = document.querySelector('header');
 const cards = document.querySelector('.items');
@@ -62,7 +61,6 @@ const load = async () => {
     }
     i += 1;
   }
-  console.log(homeCounterItems(cards));
   const likesIcones = Array.from(document.querySelectorAll('.like'));
   likesIcones.forEach((likeImage) => {
     const ind = likesIcones.findIndex((el) => el === likeImage);
