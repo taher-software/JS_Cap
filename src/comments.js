@@ -3,26 +3,51 @@ const getComm = async () => {
   const comUl = document.querySelector('#comment_div');
   const id = subBtn.getAttribute('data');
   const comCount = document.querySelector('#com_count');
+  const toggle = document.querySelector('#togBtn')
   const get = () => fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/sNKLeXAeMyPD4Nokxkg0/comments?item_id=${id}`)
     .then((res) => res.json());
-
   const mealCom = await get();
-  comCount.innerHTML = `${mealCom.length > 0 ? `${mealCom.length}` : '0'}`;
-
+  comCount.innerHTML = `${mealCom.length > 0 ? `(${mealCom.length})` : '0'}`;
   comUl.innerHTML = '';
-
-  mealCom.reverse();  
-
-  if (mealCom.length > 0) {
+  let dis = false;
+  mealCom.reverse();
+  const displayAllComms = () =>{
+    if (mealCom.length > 0) {    
     mealCom.forEach((e) => {      
       const comLi = document.createElement('li');
       comLi.className = 'comment';
       comLi.innerHTML = `
       <span class="bold">${e.creation_date} ${e.username}</span>: ${e.comment}
       `;
-      comUl.appendChild(comLi);
-    });
+      comUl.appendChild(comLi);      
+    }); 
+  };
+}
+const display6Comms = () => {    
+    let newArr = mealCom.slice(0,6)
+    newArr.forEach((e) => {      
+      const comLi = document.createElement('li');
+      comLi.className = 'comment';
+      comLi.innerHTML = `
+      <span class="bold">${e.creation_date} ${e.username}</span>: ${e.comment}
+      `;
+      comUl.appendChild(comLi);      
+    }); 
+}
+
+displayAllComms();
+
+toggle.addEventListener ('click', ()=>{
+   if (dis===true){
+    comUl.innerHTML = "";
+    displayAllComms();
+    dis = false;
+  } else if (dis === false) {
+    comUl.innerHTML = "";
+    display6Comms();
+    dis = true;    
   }
+})
 };
 
 const postComm = () => {

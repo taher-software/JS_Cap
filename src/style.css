@@ -102,7 +102,14 @@ header p {
   text-align: center;
   margin-bottom: 0;
 }
-
+#togBtn {
+ font-size: 20px;
+ border-radius: 25px;
+ border:none;
+ background-color: darksalmon;
+ cursor: pointer;
+ padding: 5px;
+}
 .comments ul {
   padding: 0;
 }
@@ -111,7 +118,7 @@ header p {
   font-size: 20px;
   list-style: none;
   padding: 1rem 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .comment:first-child {
@@ -141,7 +148,7 @@ header p {
 }
 
 .form_item {
-  margin: 20px auto;
+  margin: 20px 4rem 10px 1rem;
   border: hidden;
   border-radius: 30px;
   padding: 25px;
@@ -157,6 +164,7 @@ header p {
   background-color: tomato;
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.95);
   padding: 10px;
+  cursor: pointer;
 }
 
 input:focus::placeholder,
