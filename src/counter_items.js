@@ -1,1 +1,1 @@
-export default homeCounterItems = (container) => Array.from(container.children).length;
+export default (container) => Array.from(container.children).length;
