@@ -22,11 +22,8 @@ header {
   display: flex;
   width: 60%;
   margin-left: 20%;
+  margin-top: 3rem;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  background-color: white;
 }
 
 header img {
@@ -200,7 +197,7 @@ textarea:focus::placeholder {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 10% 22.5% 5% 22.5%;
+  margin: 5% 22.5% 5% 22.5%;
   width: 55%;
   grid-column-gap: 20%;
   grid-row-gap: 10%;
