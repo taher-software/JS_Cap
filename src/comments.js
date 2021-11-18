@@ -11,8 +11,10 @@ const getComm = async () => {
 
   comUl.innerHTML = '';
 
+  mealCom.reverse();  
+
   if (mealCom.length > 0) {
-    mealCom.forEach((e) => {
+    mealCom.forEach((e) => {      
       const comLi = document.createElement('li');
       comLi.className = 'comment';
       comLi.innerHTML = `
