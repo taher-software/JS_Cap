@@ -1,1 +1,1 @@
-const homeCounterItems = (container) => Array.from(container.children).length;
+export default homeCounterItems = (container) => Array.from(container.children).length;
