@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 html {
   font-family: monospace, sans-serif;
   width: 100%;
@@ -23,8 +21,12 @@ header {
   display: flex;
   width: 60%;
   margin-left: 20%;
-  margin-top: 5%;
+  
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: white;
 }
 
 header img {
@@ -53,8 +55,8 @@ header p {
 }
 
 .modal {
-  font-family: 'Architects Daughter', cursive;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +67,7 @@ header p {
   bottom: 5%;
   width: 60%;
   border: none;
-  background-color: rgb(238, 216, 175);
+  background-color: #F3EA8E;
   margin: 0 auto;
   padding: 2rem 3rem 0;
   z-index: 100;
@@ -111,7 +113,7 @@ header p {
 #youtube_link {
   text-decoration: none;
   color: black;
-  background-color: rgb(248, 207, 146);
+  background-color: #F2ECD4;
   border-radius: 10px;
   padding: 5px;
 }
@@ -126,7 +128,7 @@ header p {
   font-size: 20px;
   border-radius: 25px;
   border: none;
-  background-color: rgb(248, 207, 146);
+  background-color: #F2ECD4;
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.95);
   cursor: pointer;
   padding: 5px;
@@ -148,7 +150,7 @@ header p {
 }
 
 .comment:nth-child(even) {
-  background-color: rgb(248, 207, 146);
+  background-color: #F2ECD4;
   border-radius: 2rem;
 }
 
@@ -198,10 +200,8 @@ textarea:focus::placeholder {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 5% 22.5% 10% 22.5%;
+  margin: 10% 22.5% 5% 22.5%;
 
-  /* margin-left: 22.5%;
-  margin-top: 5%; */
   width: 55%;
   grid-column-gap: 20%;
   grid-row-gap: 10%;
