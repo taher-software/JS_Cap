@@ -216,6 +216,7 @@ textarea:focus::placeholder {
 .like {
   width: 15%;
   height: 60%;
+  cursor: pointer;
 }
 
 .likes-nbr {
