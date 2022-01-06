@@ -21,7 +21,7 @@
 ## Live Demo
 
 
-[Live Site](https://heuristic-carson-d71dab.netlify.app/)
+[Live Site](https://chiken-meals.netlify.app/)
 
 ## Getting Started
 
